@@ -4,6 +4,7 @@ import { Ionicons } from '@expo/vector-icons'
 
 import TeacherList from '../pages/TeacherList';
 import Favorites from '../pages/Favorites';
+import Configs from '../pages/Config'
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -38,26 +39,39 @@ function StudyTabs() {
       }}
     >
       <Screen
-        name="TeacherList"
+        name="Cards"
         component={TeacherList}
         options={{
-          tabBarLabel: 'Proffys',
+          tabBarLabel: '',
           tabBarIcon: ({ color, size, focused }) => {
             return (
-              <Ionicons name="ios-easel" size={size} color={ focused ? '#8257e5' : color } />
+              <Ionicons name="copy-outline" size={size} color={ focused ? '#000000' : color } />
             )
           }
         }}
       />
 
       <Screen
-        name="Favorites"
+        name="Matches"
         component={Favorites}
         options={{
-          tabBarLabel: 'Favoritos',
+          tabBarLabel: '',
           tabBarIcon: ({ color, size, focused }) => {
             return (
-              <Ionicons name="ios-heart" size={size} color={ focused ? '#8257e5' : color } />
+              <Ionicons name="heart-outline" size={size} color={ focused ? '#000000' : color } />
+            )
+          }
+        }}
+      />
+
+      <Screen
+        name="Configs"
+        component={Configs}
+        options={{
+          tabBarLabel: '',
+          tabBarIcon: ({ color, size, focused }) => {
+            return (
+              <Ionicons name="cog-outline" size={size} color={ focused ? '#000000' : color } />
             )
           }
         }}

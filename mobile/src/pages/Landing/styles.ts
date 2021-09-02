@@ -3,8 +3,9 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#8257E5',
+    backgroundColor: '#FFFFFF',
     justifyContent: 'center',
+    alignItems: 'center',
     padding: 40
   },
 
@@ -37,15 +38,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#333',
     borderRadius: 8,
     padding: 24,
-    justifyContent: 'space-between'
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 
   buttonPrimary: {
-    backgroundColor: '#9871f5',
-  },
-
-  buttonSecondary: {
-    backgroundColor: '#04d361'
+    backgroundColor: '#000',
   },
 
   buttonText: {
